@@ -1,26 +1,45 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Navbar } from "@/components/site/Navbar";
+import { Hero } from "@/components/site/Hero";
+import { Mission } from "@/components/site/Mission";
+import { Services } from "@/components/site/Services";
+import { Partners } from "@/components/site/Partners";
+import { Vision } from "@/components/site/Vision";
+import { Team } from "@/components/site/Team";
+import { Stats } from "@/components/site/Stats";
+import { CTA } from "@/components/site/CTA";
+import { Footer } from "@/components/site/Footer";
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "ITVisionHub — Turning Vision Into Technology" },
+      { name: "description", content: "ITVisionHub helps businesses build, scale, and secure the technology that drives their future — custom software, cloud, consulting, and cybersecurity." },
+      { property: "og:title", content: "ITVisionHub — Turning Vision Into Technology" },
+      { property: "og:description", content: "Custom software, cloud infrastructure, IT consulting and cybersecurity for ambitious teams." },
+    ],
+    links: [
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
-
 function Index() {
-  return <PlaceholderIndex />;
+  return (
+    <main className="bg-background text-foreground">
+      <Navbar />
+      <Hero />
+      <Mission />
+      <Services />
+      <Partners />
+      <Vision />
+      <Team />
+      <Stats />
+      <CTA />
+      <Footer />
+    </main>
+  );
 }
