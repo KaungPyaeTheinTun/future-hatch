@@ -2,10 +2,10 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 const tiles = [
-  "bg-gradient-blue",
-  "bg-gradient-purple",
-  "bg-gradient-teal",
-  "bg-gradient-pink",
+  "bg-gradient-coral",
+  "bg-gradient-sky",
+  "bg-gradient-sage",
+  "bg-gradient-rose",
 ];
 
 export function Vision() {
