@@ -17,7 +17,7 @@ export function Vision() {
   return (
     <section ref={ref} className="relative py-32 lg:py-44 bg-bg-dark text-white overflow-hidden">
       <div className="absolute inset-0 noise opacity-[0.08] pointer-events-none" />
-      <div className="absolute inset-0 bg-mesh opacity-30 pointer-events-none" />
+      <div className="absolute -top-40 right-0 w-[600px] h-[600px] rounded-full bg-gradient-coral opacity-20 blur-3xl pointer-events-none" />
       <div className="relative max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-16 items-center">
         <motion.blockquote
           initial={{ opacity: 0, y: 20 }}

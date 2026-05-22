@@ -5,8 +5,10 @@ const headline = "Turning Vision Into Technology".split(" ");
 
 export function Hero() {
   return (
-    <section id="top" className="relative min-h-screen flex items-center overflow-hidden bg-mesh">
-      <div className="absolute inset-0 dot-grid opacity-60" aria-hidden />
+    <section id="top" className="relative min-h-screen flex items-center overflow-hidden bg-cream">
+      <div className="absolute inset-0 dot-grid opacity-50" aria-hidden />
+      <div className="absolute -top-32 -right-20 w-[640px] h-[640px] rounded-full bg-gradient-coral opacity-25 blur-3xl" aria-hidden />
+      <div className="absolute -bottom-40 -left-20 w-[560px] h-[560px] rounded-full bg-gradient-sky opacity-30 blur-3xl" aria-hidden />
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background" aria-hidden />
       <div className="relative max-w-7xl mx-auto px-6 lg:px-10 py-32 w-full">
         <motion.span
