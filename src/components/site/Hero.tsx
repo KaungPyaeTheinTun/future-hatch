@@ -6,7 +6,7 @@ const headline = "Turning Vision Into Technology".split(" ");
 
 export function Hero() {
   return (
-    <section id="top" className="bg-cream pt-20 pb-4 w-full">
+    <section id="top" className="bg-cream pt-16 lg:pt-16 pb-4 w-full">
       {/* FIX: Added px-6 lg:px-10 directly to this max-w-7xl container.
         This mirrors the EXACT flex-box bounds used by the navbar.
       */}
