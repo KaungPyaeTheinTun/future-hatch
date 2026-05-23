@@ -18,7 +18,7 @@ export function CTA() {
         <p className="mt-6 text-lg text-black">Let's talk about your next project.</p>
         <a
           href="mailto:hello@itvisionhub.com"
-          className="mt-10 inline-flex items-center gap-2 px-7 py-3.5 rounded-lg bg-white text-foreground font-medium hover:bg-white/90 transition-colors"
+          className="mt-10 inline-flex items-center gap-2 px-7 py-3.5 rounded-lg bg-black text-foreground font-medium hover:bg-black/80 transition-colors"
         >
           Start a Conversation <ArrowRight size={16} />
         </a>
