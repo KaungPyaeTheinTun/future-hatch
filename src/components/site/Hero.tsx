@@ -6,11 +6,18 @@ const headline = "Turning Vision Into Technology".split(" ");
 
 export function Hero() {
   return (
-    <section id="top" className="relative min-h-screen flex items-center overflow-hidden bg-cream">
-      <div className="absolute inset-0 dot-grid opacity-40" aria-hidden />
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background" aria-hidden />
-      <div className="relative max-w-7xl mx-auto px-6 lg:px-10 py-32 w-full grid lg:grid-cols-2 gap-12 items-center">
-        <div>
+    <section id="top" className="relative overflow-hidden bg-cream pt-24 pb-16 px-4 sm:px-6 lg:px-10">
+      <div className="relative max-w-[1400px] mx-auto rounded-[28px] overflow-hidden shadow-lift">
+        <div className="absolute inset-0">
+          <img
+            src={heroImage}
+            alt="Serene futuristic skyline reflecting over calm water — vision becoming technology"
+            className="w-full h-full object-cover"
+            loading="eager"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/40 to-black/70" aria-hidden />
+        </div>
+        <div className="relative px-6 sm:px-10 lg:px-16 py-24 sm:py-32 lg:py-48 min-h-[80vh] flex flex-col justify-end text-white">
           <motion.span
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
