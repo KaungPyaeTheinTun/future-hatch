@@ -1,4 +1,4 @@
-import { Linkedin, Github, Twitter } from "lucide-react";
+import { Github, Linkedin, X } from "lucide-react";
 import logoFull from "@/assets/logo-full.png";
 
 export function Footer() {
@@ -29,17 +29,39 @@ export function Footer() {
           </form>
         </div>
         <div className="flex lg:justify-end items-start gap-6">
-          <a href="#" aria-label="LinkedIn" className="w-9 h-9 grid place-items-center rounded-full border border-white/15 hover:bg-white/10 transition-colors"><Linkedin size={16} /></a>
-          <a href="#" aria-label="GitHub" className="w-9 h-9 grid place-items-center rounded-full border border-white/15 hover:bg-white/10 transition-colors"><Github size={16} /></a>
-          <a href="#" aria-label="Twitter" className="w-9 h-9 grid place-items-center rounded-full border border-white/15 hover:bg-white/10 transition-colors"><Twitter size={16} /></a>
+          <a
+            href="#"
+            aria-label="LinkedIn"
+            className="w-9 h-9 grid place-items-center rounded-full border border-white/15 hover:bg-white/10 transition-colors"
+          >
+            <Linkedin size={16} />
+          </a>
+          <a
+            href="#"
+            aria-label="GitHub"
+            className="w-9 h-9 grid place-items-center rounded-full border border-white/15 hover:bg-white/10 transition-colors"
+          >
+            <Github size={16} />
+          </a>
+          <a
+            href="#"
+            aria-label="Twitter"
+            className="w-9 h-9 grid place-items-center rounded-full border border-white/15 hover:bg-white/10 transition-colors"
+          >
+            <X size={16} />
+          </a>
         </div>
       </div>
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-6 lg:px-10 py-6 flex flex-wrap justify-between items-center gap-4 text-xs text-white/50">
           <span>© 2025 ITVisionHub. All rights reserved.</span>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-white">Privacy Policy</a>
-            <a href="#" className="hover:text-white">Terms of Service</a>
+            <a href="#" className="hover:text-white">
+              Privacy Policy
+            </a>
+            <a href="#" className="hover:text-white">
+              Terms of Service
+            </a>
           </div>
         </div>
       </div>

@@ -9,7 +9,7 @@ export function Hero() {
     // Reduced outer padding (pt-16 pb-10) to make the overall section smaller
     <section
       id="top"
-      className="rounded-[28px] relative overflow-hidden bg-cream pt-18 px-4 sm:px-6 lg:px-10"
+      className="relative overflow-hidden bg-cream pt-16 pb-8 px-4 sm:px-6 lg:px-10"
     >
       <div className="relative max-w-[1400px] mx-auto rounded-[28px] overflow-hidden shadow-lift grid grid-cols-1 items-stretch">
         {/* Background Image Layer */}
