@@ -29,8 +29,8 @@ export function Navbar() {
       <nav className="max-w-7xl mx-auto px-6 lg:px-10 h-16 flex items-center justify-between">
         <a
           href="#top"
-          className="font-display text-[28px] leading-none tracking-[-0.02em] font-normal text-foreground"
-          style={{ fontVariationSettings: "'opsz' 144, 'SOFT' 50" }}
+          className="text-[26px] leading-none tracking-[-0.02em] text-foreground"
+          style={{ fontFamily: '"Inter", system-ui, sans-serif', fontWeight: 600, fontVariationSettings: "'opsz' 32" }}
         >
           ITVisionHub
         </a>
