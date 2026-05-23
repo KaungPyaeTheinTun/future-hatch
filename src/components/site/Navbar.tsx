@@ -27,9 +27,12 @@ export function Navbar() {
       }`}
     >
       <nav className="max-w-7xl mx-auto px-6 lg:px-10 h-16 flex items-center justify-between">
-        <a href="#top" className="flex items-center gap-2 font-display text-xl">
-          <span className="w-2.5 h-2.5 rounded-full bg-gradient-primary" />
-          <span>ITVision<span className="text-primary">Hub</span></span>
+        <a
+          href="#top"
+          className="font-display text-[28px] leading-none tracking-[-0.02em] font-normal text-foreground"
+          style={{ fontVariationSettings: "'opsz' 144, 'SOFT' 50" }}
+        >
+          ITVisionHub
         </a>
         <ul className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
           {links.map((l) => (
