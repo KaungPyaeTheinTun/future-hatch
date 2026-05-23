@@ -21,7 +21,7 @@ export function Hero() {
               loading="eager"
             />
             <div
-              className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/35 to-black/75"
+              className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/5 to-black/45"
               aria-hidden="true"
             />
           </div>
@@ -37,7 +37,7 @@ export function Hero() {
               <span className="w-6 h-px bg-white/50" /> IT Solutions · Software · Consulting
             </motion.span>
 
-            <h1 className="font-display text-3xl sm:text-5xl lg:text-6xl leading-[1.1] max-w-3xl tracking-tight">
+            <h1 className="font-display font-bold text-3xl sm:text-5xl lg:text-6xl leading-[1.1] max-w-3xl tracking-tight">
               {headline.map((word, i) => (
                 <span key={i} className="inline-block overflow-hidden align-baseline mr-[0.25em]">
                   <motion.span
@@ -69,7 +69,7 @@ export function Hero() {
             >
               <a
                 href="#services"
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-primary text-primary-foreground text-sm font-medium hover:opacity-90 transition-opacity"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-primary text-white text-sm font-medium hover:opacity-90 transition-opacity"
               >
                 Explore Services <ArrowRight size={14} />
               </a>

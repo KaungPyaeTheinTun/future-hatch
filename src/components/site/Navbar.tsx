@@ -60,7 +60,7 @@ export function Navbar() {
           </ul>
           <a
             href="#contact"
-            className="hidden md:inline-flex items-center px-4 py-2 rounded-lg bg-primary text-primary-foreground text-sm font-medium hover:opacity-90 transition-opacity"
+            className="hidden md:inline-flex items-center px-4 py-2 rounded-lg bg-primary text-white text-sm font-medium hover:opacity-90 transition-opacity"
           >
             Get in Touch
           </a>
@@ -96,7 +96,7 @@ export function Navbar() {
                 <a
                   href="#contact"
                   onClick={() => setOpen(false)}
-                  className="inline-flex justify-center items-center px-4 py-2 rounded-lg bg-primary text-primary-foreground font-medium"
+                  className="inline-flex justify-center items-center px-4 py-2 rounded-lg bg-primary text-white font-medium"
                 >
                   Get in Touch
                 </a>

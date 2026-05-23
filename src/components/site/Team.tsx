@@ -4,7 +4,7 @@ import { team } from "@/data/site";
 
 export function Team() {
   return (
-    <section id="team" className="py-28 lg:py-40">
+    <section id="team" className="py-28 lg:py-16">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <div className="mb-16 max-w-3xl">
           <span className="text-xs uppercase tracking-[0.2em] text-muted-foreground">Our Team</span>
