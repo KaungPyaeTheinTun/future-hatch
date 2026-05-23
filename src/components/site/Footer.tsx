@@ -1,14 +1,17 @@
 import { Linkedin, Github, Twitter } from "lucide-react";
+import logoFull from "@/assets/logo-full.png";
 
 export function Footer() {
   return (
     <footer className="bg-bg-dark text-white/80">
       <div className="max-w-7xl mx-auto px-6 lg:px-10 py-20 grid lg:grid-cols-3 gap-12">
         <div>
-          <div className="flex items-center gap-2 font-display text-xl text-white">
-            <span className="w-2.5 h-2.5 rounded-full bg-gradient-primary" />
-            ITVisionHub
-          </div>
+          <img
+            src={logoFull}
+            alt="ITVisionHub — we promised, we delivered"
+            className="h-16 w-auto"
+            loading="lazy"
+          />
           <p className="mt-3 text-sm text-white/60">Turning Vision Into Technology</p>
         </div>
         <div>
