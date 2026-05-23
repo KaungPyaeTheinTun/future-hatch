@@ -12,10 +12,10 @@ export function CTA() {
         transition={{ duration: 0.7 }}
         className="relative max-w-4xl mx-auto px-6 lg:px-10 text-center"
       >
-        <h2 className="font-display text-4xl sm:text-5xl lg:text-7xl leading-[1.05]">
+        <h2 className="font-display text-black text-4xl sm:text-5xl lg:text-7xl leading-[1.05]">
           Ready to build something that lasts?
         </h2>
-        <p className="mt-6 text-lg text-white/80">Let's talk about your next project.</p>
+        <p className="mt-6 text-lg text-black">Let's talk about your next project.</p>
         <a
           href="mailto:hello@itvisionhub.com"
           className="mt-10 inline-flex items-center gap-2 px-7 py-3.5 rounded-lg bg-white text-foreground font-medium hover:bg-white/90 transition-colors"

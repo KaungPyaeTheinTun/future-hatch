@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import heroImage from "@/assets/hero.png";
+import heroImage from "@/assets/team.png";
 
 export function Vision() {
   const ref = useRef<HTMLDivElement>(null);

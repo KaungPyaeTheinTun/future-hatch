@@ -1,4 +1,5 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import IntroScreen from "../components/ui/intro";
 import {
   Outlet,
   Link,
@@ -114,6 +115,9 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
+      {/* 2. Place it at the top level of your layout */}
+      <IntroScreen />
+
       <Outlet />
     </QueryClientProvider>
   );
