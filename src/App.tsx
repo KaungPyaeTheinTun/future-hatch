@@ -4,6 +4,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import IntroScreen from "@/components/ui/intro";
 import { Navbar } from "@/components/site/Navbar";
 import { Hero } from "@/components/site/Hero";
+import { TechGrid } from "@/components/site/TechGrid";
 import { Mission } from "@/components/site/Mission";
 import { Services } from "@/components/site/Services";
 import { Partners } from "@/components/site/Partners";
@@ -22,6 +23,7 @@ function IndexPage() {
     <main className="bg-background text-foreground">
       <Navbar />
       <Hero />
+      <TechGrid />
 
       <div className="font-lato">
         <Mission />
