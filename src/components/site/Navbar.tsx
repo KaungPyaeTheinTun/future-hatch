@@ -15,27 +15,45 @@ export function Navbar() {
 
   useEffect(() => {
     const onScroll = () => {
-      // Triggers when user scrolls down past 20px
       setScrolled(window.scrollY > 20);
-      // Automatically close mobile menu if open while scrolling down
-      if (window.scrollY > 20) setOpen(false);
+
+      // If the user manually scrolls the background page while the menu is open, close it
+      if (open && window.scrollY > 20) {
+        setOpen(false);
+      }
     };
 
     onScroll();
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  }, [open]);
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
+  // FIXED: Delay closing the menu slightly so the browser can fully register and execute the anchor navigation jump
+  const handleMobileLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    setOpen(false);
+
+    // Find target element and perform a stable anchor jump
+    const target = document.querySelector(href);
+    if (target) {
+      setTimeout(() => {
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 180); // Waits for the mobile drawer close animation to finish so layout doesn't break
+    }
+  };
+
   return (
     <>
-      {/* Navbar Container */}
+      {/* Navbar Container 
+          FIXED: Prevent the navbar from animating off-screen (-translate-y-full) if the mobile menu is open
+      */}
       <header
-        className={`fixed top-0 inset-x-0 z-50 transition-transform duration-300 bg-background/80 backdrop-blur-xl border-border/40 ${
-          scrolled ? "-translate-y-full" : "translate-y-0"
+        className={`fixed top-0 inset-x-0 z-50 transition-transform duration-300 bg-background/80 backdrop-blur-xl border-b border-border/40 ${
+          scrolled && !open ? "-translate-y-full" : "translate-y-0"
         }`}
       >
         <nav className="max-w-7xl mx-auto px-6 lg:px-10 h-16 flex items-center justify-between">
@@ -49,6 +67,7 @@ export function Navbar() {
           >
             ITVisionHub
           </a>
+
           <ul className="hidden md:flex items-center gap-8 text-md text-black font-medium">
             {links.map((l) => (
               <li key={l.href}>
@@ -58,12 +77,14 @@ export function Navbar() {
               </li>
             ))}
           </ul>
+
           <a
             href="#contact"
             className="hidden md:inline-flex items-center px-4 py-2 rounded-lg bg-primary text-white text-sm font-medium hover:opacity-90 transition-opacity"
           >
             Get in Touch
           </a>
+
           <button
             aria-label="Toggle menu"
             className="md:hidden p-2 rounded-md hover:bg-muted"
@@ -80,6 +101,7 @@ export function Navbar() {
               initial={{ height: 0, opacity: 0 }}
               animate={{ height: "auto", opacity: 1 }}
               exit={{ height: 0, opacity: 0 }}
+              transition={{ duration: 0.2, ease: "easeInOut" }}
               className="md:hidden overflow-hidden bg-background border-t border-border"
             >
               <div className="px-6 py-4 flex flex-col gap-4">
@@ -87,16 +109,16 @@ export function Navbar() {
                   <a
                     key={l.href}
                     href={l.href}
-                    onClick={() => setOpen(false)}
-                    className="text-foreground/80 font-medium"
+                    onClick={(e) => handleMobileLinkClick(e, l.href)}
+                    className="text-foreground/80 font-medium py-1 w-full block active:text-primary"
                   >
                     {l.label}
                   </a>
                 ))}
                 <a
                   href="#contact"
-                  onClick={() => setOpen(false)}
-                  className="inline-flex justify-center items-center px-4 py-2 rounded-lg bg-primary text-white font-medium"
+                  onClick={(e) => handleMobileLinkClick(e, "#contact")}
+                  className="inline-flex justify-center items-center px-4 py-2 rounded-lg bg-primary text-white font-medium w-full text-center"
                 >
                   Get in Touch
                 </a>
