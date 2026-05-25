@@ -6,17 +6,11 @@ const techIcons = [
   { name: "C#", logo: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/csharp.svg" },
   { name: "ASP.NET", logo: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/dotnet.svg" },
   { name: "React.js", logo: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/react.svg" },
+  {name: "Vue.js",logo: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/vuedotjs.svg",hex: "4FC08D",},
   { name: "MySQL", logo: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/mysql.svg" },
-  { name: "Redis", logo: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/redis.svg" },
-  {
-    name: "Digital Ocean",
-    logo: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/digitalocean.svg",
-  },
+  {name: "MSSQL",logo: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/microsoftsqlserver.svg",},
+  {name: "Digital Ocean",logo: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/digitalocean.svg",},
   { name: "Docker", logo: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/docker.svg" },
-  {
-    name: "MSSQL",
-    logo: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/microsoftsqlserver.svg",
-  },
 ];
 
 export function TechGrid() {
