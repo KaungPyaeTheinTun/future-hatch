@@ -20,7 +20,7 @@ function Counter({ to }: { to: number }) {
 
 export function Stats() {
   return (
-    <section id="impact" className="py-28 lg:py-16 bg-secondary/40">
+    <section id="impact" className="py-16 lg:py-16 bg-secondary/40">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <div className="max-w-3xl mb-16">
           <span className="text-xs uppercase tracking-[0.2em] text-muted-foreground">Impact</span>

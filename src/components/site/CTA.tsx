@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 
 export function CTA() {
   return (
-    <section id="contact" className="relative py-28 lg:py-16 overflow-hidden bg-gradient-primary text-white">
+    <section id="contact" className="relative py-16 lg:py-16 overflow-hidden bg-gradient-primary text-white">
       <div className="absolute inset-0 noise opacity-[0.12]" />
       <motion.div
         initial={{ opacity: 0, scale: 0.97 }}

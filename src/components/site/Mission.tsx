@@ -3,7 +3,7 @@ import { ArrowUpRight } from "lucide-react";
 
 export function Mission() {
   return (
-    <section id="mission" className="py-28 lg:py-16">
+    <section id="mission" className="py-16 lg:py-16">
       <div className="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-12 lg:gap-20">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

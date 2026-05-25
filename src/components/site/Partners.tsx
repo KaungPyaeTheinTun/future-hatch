@@ -23,7 +23,7 @@ function Row({ direction }: { direction: "left" | "right" }) {
 
 export function Partners() {
   return (
-    <section className="py-20 border-y border-border w-full">
+    <section className="py-16 border-y border-border w-full">
       {/* FIX: Wrap everything inside the exact same max-w-7xl structure 
         so it tracks identically with the Navbar and Hero layout bounds.
       */}

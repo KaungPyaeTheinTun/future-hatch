@@ -19,7 +19,7 @@ export function Services() {
   return (
     <section
       id="services"
-      className="py-28 lg:py-16 bg-secondary/40 relative w-full overflow-hidden"
+      className="py-16 lg:py-16 bg-secondary/40 relative w-full overflow-hidden"
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10 relative">
         {/* Section Header */}
