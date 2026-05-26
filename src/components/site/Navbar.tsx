@@ -52,7 +52,7 @@ export function Navbar() {
           FIXED: Prevent the navbar from animating off-screen (-translate-y-full) if the mobile menu is open
       */}
       <header
-        className={`fixed top-0 inset-x-0 z-50 transition-transform duration-300 bg-background/80 backdrop-blur-xl border-b border-border/40 ${
+        className={`fixed top-0 inset-x-0 z-50 transition-transform duration-300 bg-background/80 backdrop-blur-xl ${
           scrolled && !open ? "-translate-y-full" : "translate-y-0"
         }`}
       >
