@@ -134,10 +134,6 @@ export function Team() {
                       <span className="text-[10px] sm:text-[11px] tracking-[0.15em] uppercase font-bold">
                         {String(i + 1).padStart(2, "0")} // STRATEGY
                       </span>
-                      <ArrowRight
-                        size={14}
-                        className="transform -rotate-45 group-hover:rotate-0 transition-transform duration-200"
-                      />
                     </div>
                   </>
                 )}

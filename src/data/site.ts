@@ -8,16 +8,60 @@ export const services = [
 export const clients = ["Acme Corp","TechNova","CloudBridge","DataStream","NexaGroup","Veloris","Synapse AI","Orbita","PulseWorks","Gridlane"];
 
 export const team = [
-  { name: "Ariya Sutthirak", title: "CEO & Co-Founder", bio: "10+ years building tech companies across SEA.", initials: "AS", color: "bg-gradient-coral" },
-  { name: "Marcus Chen", title: "CTO", bio: "Cloud architect and open-source contributor.", initials: "MC", color: "bg-gradient-sky" },
-  { name: "Priya Nair", title: "Head of Product", bio: "Product strategist with a UX-first mindset.", initials: "PN", color: "bg-gradient-rose" },
-  { name: "Jordan Blake", title: "Lead Engineer", bio: "Full-stack developer, React and Go specialist.", initials: "JB", color: "bg-gradient-sage" },
-  { name: "Lena Müller", title: "DevOps Lead", bio: "Kubernetes, AWS, and infrastructure automation.", initials: "LM", color: "bg-gradient-coral" },
-  { name: "Somchai Lek", title: "Security Consultant", bio: "Certified ethical hacker and compliance advisor.", initials: "SL", color: "bg-gradient-sky" },
+  {
+    name: "U Yan Aung",
+    title: "CEO & Lead Cloud Architect",
+    bio: "Driving technological innovation with over a decade of expertise in enterprise cloud architecture, scalable infrastructures, and open-source ecosystems.",
+    initials: "YAA",
+    linkedin: "https://linkedin.com/in/uyanaung", // Replace with real URL link
+  },
+  {
+    name: "Ariya Sutthirak",
+    title: "Co-Founder & Head of Operations",
+    bio: "Specializes in business strategy and scaling technical operations across Southeast Asia.",
+    initials: "AS",
+    linkedin: "https://linkedin.com/in/ariyasutthirak",
+  },
+  {
+    name: "Priya Nair",
+    title: "Head of Product & UX",
+    bio: "Translating complex engineering problems into human-centered product designs and digital experiences.",
+    initials: "PN",
+    linkedin: "https://linkedin.com/in/priyanair",
+  },
+  {
+    name: "Jordan Blake",
+    title: "Principal Engineer",
+    bio: "Full-stack visionary focusing on microservices backend design using React, Go, and high-performance system configurations.",
+    initials: "JB",
+    linkedin: "https://linkedin.com/in/jordanblake",
+  },
+  {
+    name: "Somchai Lek",
+    title: "DevOps & Security Lead",
+    bio: "Automating production code security deployments via Kubernetes, cloud compliance architectures, and secure server pipelines.",
+    initials: "SL",
+    linkedin: "https://linkedin.com/in/somchailek",
+  },
 ];
 
 export const stats = [
-  { value: 120, suffix: "+", label: "Projects Delivered", description: "Across 15+ industries in 8 countries." },
-  { value: 98, suffix: "%", label: "Client Satisfaction", description: "Measured across post-project NPS surveys." },
-  { value: 50, suffix: "+", label: "Team Members", description: "Engineers, designers, and strategists worldwide." },
+  {
+    value: 50,
+    suffix: "+",
+    label: "Projects Delivered",
+    description: "Enterprise software solutions deployed across 15+ modern industries.",
+  },
+  {
+    value: 98,
+    suffix: "%",
+    label: "Client Satisfaction",
+    description: "Consistently verified across rigorous post-delivery service audits.",
+  },
+  {
+    value: 50,
+    suffix: "+",
+    label: "Team Members",
+    description: "Engineers, cloud designers, and technology specialists worldwide.",
+  },
 ];
